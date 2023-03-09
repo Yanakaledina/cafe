@@ -1,0 +1,923 @@
+ html, body {
+   height: 100%;
+ }
+
+ body {
+   /* font-size: 14px; */
+   min-width: 320px;
+  
+   position: relative;
+   margin: 0;
+   /* line-height: 1,65; */
+   font-family: 'Open Sans', sans-serif;
+     background-color: white; 
+ }
+
+ /* відповідає за верхню палітру кнопок */
+.container {
+ margin: 0px 20px;
+  max-width: 1950px; 
+ padding: 0px 20px;
+}
+img {
+   max-width: 100%;
+}
+.header {
+   background-image: url(bg.jpg);
+     height: auto;   
+   /* картинка не повторюється */
+   background-repeat: no-repeat;
+   /* розтягує фото на цілий екран рівномірно */
+   background-size: cover; 
+   background-position: center;
+}
+
+.header-line {
+   padding-top: 50px;
+   /* всі елементи були виведенні в стрічку */
+   display: flex;
+   /* вирівнювання елементів по центру*/
+    align-items: center; 
+    justify-content: space-around; 
+} 
+.nav {
+   display:flex;
+   justify-content: space-around;
+   flex-wrap: nowrap;
+   
+}
+.nav-item {
+   display: inline-block;
+   display:flex;
+   color: white;
+   /* забрати підкреслення тексту */
+   text-decoration: none;
+   /* анімація використовується */
+   transition: all .7s ease-out;
+   font-weight: 700;
+   font-size: 28px;
+  /* відстань один від одного */
+  margin-right: 20px;
+  margin-top: 30px;
+  /* період зміни кольору при наведенні */
+  transition: color 0.3s linear;
+} 
+ /* як наводимо мишку міняє колір */
+.nav-item:hover {
+ color: red;
+}
+.photo {
+   height: 50px;
+   left: 50px;
+    margin-top: 10px;
+}
+.photo-img {
+   height: 50px;
+}
+.text-photo {
+   position: absolute;
+   padding-right: 15px;
+    height: 70px; 
+   top:80px;
+}
+.photo-img-img {
+   color: orange; 
+   width: 23px;
+   height: 23px;
+}
+.photo {
+   display: flex;
+}
+
+.cart {
+   position: relative;
+   border-right: 1px solid #FFFFFF;
+   height: 45px;
+}
+.cart-img {
+   /* position: absolute; */
+   top: 15px;
+   right: 15px;
+   color: white; 
+   margin-right: 15px;
+  
+} 
+
+.num {
+   color: white; 
+   text-decoration: none; 
+   font-weight: 700;
+   font-size: 16px;
+   transition: color 0.3s linear;
+}
+.num:hover {
+   color: red;
+}
+
+.text-photo {
+   font-size: 10px;
+   font-weight: 400;
+   color: white; 
+}
+
+.phote-holder {
+   /* елементи вивести в стрічку */
+   display: flex;
+   margin-left: 7px;
+
+}
+ .button {
+   margin-right: 20px; 
+   height: 50px; 
+}
+ .photo-button {
+   margin-left : 80px;
+ }
+.btn-button {
+   background-color: #FF7400;
+   border: none; 
+   border-radius: 15px;
+   transition: background-color 0.3s linear;
+   padding: 15px;
+    /* position: absolute; */
+    
+}
+.btn-button:hover {
+   background-color: red;
+} 
+.btn-text {
+   color: white;
+     text-decoration: none;
+     display: flex;
+    font-size: 14px; 
+    text-transform: none; 
+    font-style: normal;
+   
+}
+.header-down {
+   /* став батьками для нашого класу */
+   position: relative;
+   margin-right: 355px;
+}
+.header-title {
+   margin-right: 0px;
+   margin-top: 90px;
+   margin-bottom: 12px;
+    /* position: absolute;  */
+}
+.header-title-title {
+   color:#D67E35;
+   font-family: 'Tinos', serif;
+    text-align: center;
+      font-size: 20px;  
+     /* font-size: calc(0.5rem + 2.5vmin); */
+}
+.header-title-title1 {
+   color:#D67E35;
+   font-family: 'Tinos', serif;
+    text-align: center;
+     font-size: 36px; 
+    /* font-size: calc(15px + 21 * (100vw / 1800)); */
+}
+
+.header-title-title2 {
+   color:antiquewhite;
+   font-family: 'Open Sans', sans-serif;
+    font-size: 15px; 
+   font-weight: 400;
+   text-align: center;
+   /* font-size: calc(9px + 6 * (100vw / 1800)); */
+}
+
+/* створення полосочок та створення песевдокласів */
+.header-title-title2:after {
+   /* position: absolute; */
+   content: " ";
+   height: 2px;
+   width: 60px;
+   background-color: #FFFFFF;
+    top: 173px;
+    left: 619px
+} 
+.header-line {
+   margin: auto 20px;
+}
+.header-title-title2:before {
+   /* position: absolute; */
+   content: " ";
+   height: 2px;
+   width: 60px;
+   background-color: #FFFFFF;
+   top: 173px;
+   left: 284px;
+} 
+.bth-down {
+   margin-top: 15px;
+   display: flex;
+   justify-content: center;
+    
+}
+.bth-down-button {
+   background-color: #FF7400;
+   border: none; 
+   border-radius: 15px;
+   
+   padding: 14px;
+    margin-bottom: 80px;
+    transition: background-color 0.3s linear; 
+}
+.bth-down-button:hover {
+   background-color: #ff7300a5;
+}
+.bth-down-text {
+   color: white;
+   text-decoration: none;
+   font-family: 'Open Sans', sans-serif;     
+}
+
+.card-holder {
+   display: flex;
+   justify-content: center;
+}
+
+.card1,
+.card2,
+.card3 {
+   box-shadow: 10px 10px 40px 20px #0000001A;
+   width: 349px;
+   margin-right: 31px;
+   background-color: #FFFFFF;
+   margin-top: -32px;
+   padding: 0px 10px;
+}
+.card1 span {
+   color: #BC9060;
+}
+.card2 span {
+   color: #BC9060;
+}
+.card3 span {
+   color: #BC9060;
+}
+ .card-text {
+   display: flex;
+   font-family: 'Tinos', serif;
+   font-size: 18px;
+   font-weight: 400;
+   /* картинка по центру */
+   justify-content: center;
+   margin-bottom: 20px;
+} 
+.card-image {
+   display: flex;
+   /* картинка по центру */
+   justify-content: center;
+   padding-top: 31px;
+}
+.card-text-title {
+   text-align: center; 
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
+   font-weight: 400;
+   color: #656363;
+   padding-bottom: 31px;
+}
+
+.history {
+
+   margin-top: 50px; 
+   padding-bottom: 200px;
+}
+.history-text-title {
+   width: 444px;
+   font-family: 'Tinos', serif;
+   font-size: 18px;
+   font-weight: 400;
+   margin: auto 20px; 
+   box-shadow: 0 10px 20px #c458a0;
+    border-radius: 20px;
+}
+.history-text-title span {
+ color: #BC9060;
+}
+.history-text {
+   text-align: center; 
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
+   font-weight: 400;
+   color: #656363; 
+   /* границя для тексту  */
+    width: 444px; 
+}
+.history-numbers {
+   display: flex;
+   width: 444px; 
+   justify-content: center;
+   margin-top: 40px;
+   margin-left: 30px;
+
+}
+.history-numbers-item {
+   color: #BC9060;
+   font-size: 40px; 
+   /* padding-bottom: 10px; */
+   margin-right: 70px;
+   text-align: center; 
+}
+.history-numbers span {
+   /* зменшення відстані  */
+   /* display: block; */
+   font-size: 15px; 
+   color: black;
+}
+.history-united {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 100px;
+}
+.history-info {
+   max-width: 80%; 
+    display: block; 
+   margin: 80px auto;
+   box-shadow: 0 10px 20px #c458a0;
+   border-radius: 20px;
+}
+.history-img {
+     max-width: 70%; 
+   margin: 30px auto; 
+   /* тінь добавити до карточки */
+   box-shadow: 0 5px 10px #656363;
+   border-radius: 10px;
+    display: flex; 
+     flex: 0 1 auto; 
+     background-color: #dcd7d7;
+    
+   
+}
+.image1 {
+   display: flex;
+   width: 100%;
+    height: 58%;  
+ overflow: hidden;
+}
+.image1 img {
+ border-radius: 20px;
+   
+}
+.image2 {
+   display: flex;
+   /* flex: 0 0 25%; */
+   overflow: hidden;
+   width: 100%;
+    height: 58%;  
+   margin-top: 123px;
+    margin-right: -8px;
+    margin-left: -43px;
+    
+}
+
+.image3 {
+   display: flex;
+   flex: 0 0 200px ;
+   margin-top: 248px;
+    margin-right: 5px; 
+   margin-bottom: 10px;    
+}
+
+
+.image3 img,
+.image2 img,
+.image1 img
+ {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.black-block {
+   background-image: url(black.jpg);
+   height: 390px;
+}
+.black-holder {
+   display: flex;
+   justify-content: space-between;
+}
+
+.black-left {
+   color: #D67E34;
+   font-family: 'Tinos', serif;
+   font-size: 30px;
+   font-weight: 400;
+   text-align: center;
+   margin-top: 50px;
+   margin-left: 70px;
+}
+.black-left-macure {
+   /* display: block; */
+   text-align: center;
+   margin: 30px auto;
+   border: 1px solid #281313;
+   max-width: 100%;
+   animation: black-left-macure 15s linear infinite;
+   overflow: hidden;
+}
+
+ /* бігуча стрічка */
+@keyframes black-left-macure {
+   0% {
+      transform: translateX(100%);
+   }
+   100% {
+      transform: translateX(-100%);
+   }
+}
+
+.black-left-text {
+   color:red;
+   font-family: 'Tinos', serif;
+   font-size: 20px;
+   font-weight: 400;
+   top:10px;
+   left: 10px;
+}
+.black-right {
+   display: block;
+   margin: 50px auto;
+   
+}
+
+.bth-black-button  {
+   background-color: #FF7400;
+   border: none; 
+   border-radius: 15px;
+   padding: 14px;
+   transition: background-color 0.3s linear;
+}
+
+.bth-black-button:hover {
+  background-color: red;
+}
+.black-button-text{
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;     
+  font-size: 18px;
+  
+}
+.menu {
+   padding-top: 30px;
+   margin-left: 50px;
+}
+
+.menu-right-together{
+display: flex;
+}
+
+.menu-text {
+   color:#D67E34;
+   font-family: 'Tinos', serif;
+   font-size: 18px;
+   font-weight: 400;
+   text-align: center; 
+   padding-top: 20px;
+   margin-right: 31px;
+}
+.imgpizza {
+   width: 445px;
+   height: 478px;
+   padding-top: 40px;
+}
+.gamb-text {
+   color: #656363;
+   font-family: 'Open Sans', sans-serif;  
+   font-size: 24px;
+   font-weight: 400;
+   margin-bottom: 80px;
+    align-items: center;
+    padding-top: 50px; 
+}
+.gamb-text span {
+   color:#D67E34; 
+   font-family: 'Open Sans', sans-serif;  
+   font-size: 24px;
+   font-weight: 400; 
+}
+.menu-gamb {
+margin-right: 50px;
+margin-bottom: 22px;
+}
+.menu-left {
+   margin-top: 43px;
+   margin-left: 40px;  
+}
+.menu-bar {
+ background-image: url(bar.jpg);
+ /* щоб картинка не повторювалась */
+ background-repeat: no-repeat;
+ /* щоб зображення розтягнулось на цілий екран */
+ background-size: cover;
+ height: 1550px; 
+ margin-top: 50px;
+}
+.menu-card-holder {
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+   justify-content: space-around;
+   
+}
+.menu-card1,
+.menu-card2,
+.menu-card3 {
+   justify-content: center;
+   width: 300px;
+   margin-right: 31px;
+   background-color: rgb(230, 224, 224);
+   margin-top: 200px;
+   padding: 30px 10px;
+}
+.imggamburger {
+   display: flex;
+   padding: 31px 36px;
+}
+.gamburger-number {
+   background-color: #FF7400;
+   border-radius: 50%;
+   border: 5px solid #FFFFFF;
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   margin-top: -78px;
+   margin-left: 193px;
+}
+.menu-card-img {
+   display: block;
+   position: relative;
+}
+.menu-card-titell {
+   margin-top: -15px;
+   padding-bottom: 10px;
+}
+.menu-card-titel {
+   color:#934a0f; 
+   font-family: 'Open Sans', sans-serif;  
+   font-size: 24px;
+   font-weight: 400; 
+   text-align: center; 
+}
+.menu-card-titel2 {
+   font-family: 'Tinos', serif;
+   font-size: 16px;
+   font-weight: 400;
+   text-align: center;
+}
+.gamburger-number2 {
+   background-color: #FF7400;
+   border-radius: 20px;
+   border: 5px solid #934a0f;
+   padding: 10px;
+   transition: background-color 0.3s linear;
+   margin-bottom: 10px;
+}
+.gamburger-number2:hover {
+   background-color: #934a0f;
+   border: 5px solid #FF7400;
+}
+.gamburger-number-text2 {
+   font-family: 'Open Sans', sans-serif;  
+   font-size: 16px;  
+   margin-bottom: 10px;
+}
+.gamburger-number2-bth {
+   margin-left: 90px;
+}
+.visitor {
+   background-color: #d8d4d4;
+   height: 320px;
+   /* margin-top: 20px; */
+}
+.visitor-center{
+   font-family: 'Open Sans', sans-serif;  
+   text-align: center; 
+}
+.visitor-text {
+   padding-top: 40px;
+ text-align: center; 
+} 
+.visitor-image {
+   border-radius: 50%;
+   border: 5px solid #FFFFFF;
+   width: 100px;
+   height: 100px;  
+}
+.foto {
+   margin-top: 100px;
+}
+
+.foto-holder {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   justify-content: center;
+   gap: 10px;
+   margin: 0 50px;
+   
+}
+.imgsoup {
+   padding-left: 10px;
+}
+
+.foto-titel {
+   font-family: 'Tinos', serif;
+   font-size: 36px;
+   font-weight: 400;
+   text-align: center;
+}
+.foto-titel span {
+color: #FF7400;
+}
+
+
+.imgbeaker {
+   width: 513px;
+   height: 250px;
+}
+.imgcofe, .imgsoup  {
+   width: 250px;
+   height: 250px;
+} 
+
+.foto-cook-img {
+   display: grid;
+   grid-template-columns: repeat(3, 0.5fr);
+    justify-content: center; 
+  
+   margin-left: 50px;
+   
+}
+.imgcook {
+   width: 330px;
+   height: 440px;
+}
+.foto-restaurant {
+     background-image: url(restaurantt.jpg);
+    background-repeat: no-repeat;
+     background-size: cover; 
+      height: 450px;  
+}
+
+.foto-restaurant-text {
+font-family: 'Tinos', serif;
+   font-size: 36px;
+   font-weight: 400;
+   text-align: center;
+   color: #FFFFFF;
+   padding-top: 30px;
+   box-shadow: 0 12px 10px #BC9060;
+}
+.footer {
+   background-color: black;
+   color: #FFFFFF;
+    padding: 50px 0px;
+    text-align: center; 
+    font-size: 12px;
+}
+.burger-menu {
+   display: none;
+} 
+.block {
+ display: block;
+}
+.burger-slide {
+   position: absolute;
+   z-index: 1;
+}
+button {
+   border: none;
+   outline: none;
+   background-color: transparent;
+}
+ .disp {
+   display: none;
+} 
+
+ @media only screen and (max-width:1500px) {
+      .foto-holder {
+         display: block;
+      }
+      
+      .imgbeaker,
+      .imgcofe,
+      .imgsoup,
+      .foto-gallery1,
+      .foto-gallery2 {
+         display: block;
+         /* щоб картинки були посередині */
+         margin-left: auto;
+         margin-right: auto;
+      }
+      .imgbeaker,
+      .imgcofe,
+      .imgsoup {
+         /* щоб відстань між картинками була */
+         margin-bottom: 20px;
+      
+      }
+      
+      
+      
+
+} 
+@media only screen and (max-width:1450px) { 
+     .header-title-title2:before,
+      .header-title-title2:after {
+        content: none;
+      }
+     .history {
+      padding-bottom: 20px;
+     }
+     .burger-slide {
+      width: 30%;
+      height: 60%;
+      margin-top: 20px;
+      background-color: black;
+      border-radius: 10px;
+      box-shadow: 0 12px 10px #666563;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 39px;
+      margin-left: -350px;
+      
+      
+   }
+   .history-united {
+    display: flex;
+    flex-direction: column;
+   }
+     
+   }
+@media only screen and (max-width:1300px) {
+  .menu-card-holder, 
+  .menu-card1,
+  .menu-card2,
+  .menu-card3,
+   .menu-card-img,
+   .imggamburger { 
+   display: block;
+   max-width: 100%;
+  } 
+  
+ .menu-card1,
+ .menu-card2,
+ .menu-card3 {
+   margin: 10px auto;
+ }
+ .menu-card1 {
+   order: 1;
+   margin-top: 20px;
+ }
+ 
+
+ .black-left-macure {
+   display: inline;
+}
+ .header-title {
+   /* текст набуває статичного значення посередині  */
+   position: static;
+ } 
+
+ .black-holder {
+   display: block;
+ }
+ .foto-cook-img {
+   display: block;
+ }
+ .foto-cook-img img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+ }
+ .black-left
+ {
+   text-align: center;
+   padding-top: 50px;
+ }
+ 
+
+  .black-right {
+   text-align: center;
+   margin-bottom: 100px; 
+ } 
+
+ 
+  .history-text,
+ .history-text-title,
+ .history-numbers {
+ text-align: center;
+ font-size: 18px;
+ }  
+ .history-text em {
+   font-size: 18px;
+ }
+  .header-down {
+  
+   /* width: auto; */
+   margin-right : 295px;
+   
+ } 
+} 
+
+@media only screen and (max-width:1185px) {
+ .burger-menu {
+   display: block;
+ }  
+ .nav,
+ .cart, 
+ .photo,
+ .photo-button {
+   display: none;
+ }
+.header-line {
+   justify-content: space-between;
+}
+.history-text {
+    font-size: 11px;
+     width: auto;
+}
+.history-text-title,
+.history-numbers {
+   margin-left: auto;
+   margin-right: auto;
+}
+ .imgpizza {
+   display: none;
+}
+
+}
+@media only screen and (max-width:1000px) {
+   .card-holder
+   {
+      display: block;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .card-text {
+      font-size: 20px;
+   }
+   
+   .card1,
+   .card2,
+   .card3  {
+      width: 100%;
+      margin-top: -30px;
+      margin-bottom: 20px;
+   }
+   .card2 {
+      order: 2;
+      margin-top: 20px;
+   }
+   .card3 {
+      order: 3;
+      margin-top: 20px;
+   }
+   .header-title {
+      margin-top: 30px;
+   } 
+}
+
+@media only screen and (max-width:700px){
+   .history-united {
+      display: block;
+   }
+   .card-text {
+      font-size: 35px;
+   }
+   .container {
+      margin: auto 40px;
+   }
+   .header-title-title {
+      font-size: 10px;
+   }
+   .header-title-title1 {
+      font-size: 12px;
+      color: #c458a0;
+   }
+   .header-title-title2 {
+      font-size: 8px;
+   }
+}
+
+@media only screen and (max-width:500px) {
+.header
+ {
+  position: absolute;
+   height: auto;
+   
+} 
+.card-text {
+   font-size: 45px;
+}
+
+}
